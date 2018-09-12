@@ -25,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/../cmdlb/packages/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/packages/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/sites/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p4t/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/p4t/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paws4thought/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/templates/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,13 +44,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="9" />
-          <entry key="html" value="186" />
+          <entry key="html" value="675" />
           <entry key="py" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="186" />
+          <entry key="HTML" value="675" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="136" />
         </counts>
@@ -119,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="1841">
               <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
             </state>
           </provider>
@@ -155,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-538">
-              <caret line="265" column="62" selection-start-line="265" selection-start-column="62" selection-end-line="265" selection-end-column="62" />
+            <state relative-caret-position="493">
+              <caret line="182" column="47" lean-forward="true" selection-start-line="145" selection-start-column="23" selection-end-line="182" selection-end-column="47" />
               <folding>
                 <element signature="e#430#488#0#HTML" expanded="true" />
                 <element signature="e#1254#1313#0#HTML" expanded="true" />
@@ -182,8 +181,8 @@
         <option value="$PROJECT_DIR$/p4t/urls.py" />
         <option value="$PROJECT_DIR$/p4t/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/paws4thought/templates/home.html" />
         <option value="$PROJECT_DIR$/p4t/templates/base.html" />
+        <option value="$PROJECT_DIR$/paws4thought/templates/home.html" />
       </list>
     </option>
   </component>
@@ -355,13 +354,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.27262813" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.27262813" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -475,22 +474,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1841">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538">
-          <caret line="265" column="62" selection-start-line="265" selection-start-column="62" selection-end-line="265" selection-end-column="62" />
+        <state relative-caret-position="493">
+          <caret line="182" column="47" lean-forward="true" selection-start-line="145" selection-start-column="23" selection-end-line="182" selection-end-column="47" />
           <folding>
             <element signature="e#430#488#0#HTML" expanded="true" />
             <element signature="e#1254#1313#0#HTML" expanded="true" />
             <element signature="e#2018#2077#0#HTML" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
         </state>
       </provider>
     </entry>

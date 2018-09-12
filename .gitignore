@@ -1,0 +1,9 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+p4t/local_settings.py
+db.sqlite3
+cmdlb.pem
+venv

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <!-- Section Services -->
+    <section id="services" class="pages">
+        <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <!-- Heading -->
+            <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+                <h1>Day Care & Dog Walking</h1>
+            </div>
+        </div>
+        <!-- container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Day Care & Dog Walking</h3>
+                    <strong><p>At Paws 4 Thought we offer group walking on a regular basis.</p></strong>
+                        <p>
+                        Dogs need to have fun but we ensure this never becomes out of control. To ensure a well managed
+                        walk we will only ever take a maximum of 5 dogs per walk. The dogs are walked in a variety of
+                        locations and can be taken swimming if allowed.
+                        </p>
+                    <p>
+                        Doggy Day Care. We pride ourselves on treating your dog as though they were our own, so you can
+                        relax and have full confidence knowing that your dog is receiving the best possible care in our
+                        home from home safe and secure environment. Places are limited as we only take 10 day care dogs
+                        per day. If you are interested please do get in touch and we'll do our best to accommodate your
+                        needs.
+                    </p>
+                        <p>
+                        All of our full-time Day Care dogs get walked at least once a day and have lots of cuddles. They
+                        will also have fun with Claire’s two dogs JD & Leo, who despite their age still both love to
+                        play! We try to stick to your dog’s regular routine as much as possible to reduce any stress so
+                        you can relax knowing they’re happy and well cared for.
+                        </p>
+                    <p>
+                        As a dog lover and owner, Claire knows all too well how worrying it can be leaving your dog.
+                        Therefore you can always arrange to come for a walk with Claire beforehand, or book a trial day,
+                        so you and your dog can get to know her and the other dogs first.
+                    </p>
+                    <!-- button -->
+                    <a class="btn" href="{% url 'services' %}">
+                        <i class="fa fa-angle-double-left"></i> All Services
+                    </a>
+                </div>
+                <!-- /col-md-6 -->
+                <div class="col-md-6 res-margin">
+                    <h4>Why choose Paws 4 Thought?</h4>
+                    <ul class="custom no-margin">
+                        <li>Highly qualified and experienced</li>
+                        <li>Friendly Professional approach</li>
+                        <li>Passionate about Dogs</li>
+                        <li>Positive and motivational techniques used</li>
+                        <li>Day Care capped at 10 dogs per day</li>
+                        <li>Capped at 5 dogs per walk</li>
+                        <li>ALL our full-time Day Care dogs get walked</li>
+                        <li>Collection / drop off service available</li>
+                        <li>Boutique service @ Competitive rates</li>
+                    </ul>
+                    <!-- /ul -->
+                </div>
+                <!-- /col-md-6 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        <!-- owl slider -->
+        <div class="container-fluid margin1">
+            <div id="owl-featured" class="owl-carousel no-padding margin1">
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature1.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature1.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <a href="{% static 'img/feature2.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature2.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature3.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature3.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature4.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature4.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature5.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature5.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+            </div>
+            <!-- /owl-carousel -->
+        </div>
+        <!-- /container-->
+    </section>
+    <!-- /Section ends -->
+{% endblock %}

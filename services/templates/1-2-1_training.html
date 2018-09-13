@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <!-- Section Services -->
+    <section id="services" class="pages">
+        <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <!-- Heading -->
+            <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+                <h1>1-2-1 Training</h1>
+            </div>
+        </div>
+        <!-- container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>1-2-1 Dog and Puppy Training</h3>
+                    <strong><p>In addition to the <a href="{% url 'training' %}" >Training Classes</a>, Paws 4 Thought offer 1-2-1 training for dogs of all ages.</p></strong>
+                    <p>
+                        These can take place at your home, or another location convenient to you.
+                    </p>
+                    <p>
+                        For pre-vaccinated puppies, training can be started very early on in your home, which can be
+                        useful for getting off to a good start. The earlier you teach them the right things to do the
+                        less likely they are to learn the wrong things!
+                    </p>
+                    <h4>BEHAVIOURAL CONSULTATIONS</h4>
+                    <p>Unfortunately, some dogs do develop problems that can be difficult to correct without help.
+                        We offer behavioural consultations to uncover the root of the problem. We then work with you and
+                        your dog to improve behaviour, and eliminate the unwanted behavioural traits.
+                    </p>
+                    <!-- button -->
+                    <a class="btn" href="{% url 'services' %}">
+                        <i class="fa fa-angle-double-left"></i> All Services
+                    </a>
+                </div>
+                <!-- /col-md-6 -->
+                <div class="col-md-6 res-margin">
+                    <h4>Problems we may be able to help with include:</h4>
+                    <ul class="custom no-margin">
+                        <li>Aggression towards people or other dogs</li>
+                        <li>Fear of Noises, such as fireworks or thunder</li>
+                        <li>Not coming when called</li>
+                        <li>Separation problems</li>
+                        <li>Car problems</li>
+                        <li>Destructive behaviour</li>
+                    </ul>
+                    <!-- /ul -->
+                </div>
+                <!-- /col-md-6 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+        <!-- owl slider -->
+        <div class="container-fluid margin1">
+            <div id="owl-featured" class="owl-carousel no-padding margin1">
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature1.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature1.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <a href="{% static 'img/feature2.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature2.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature3.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature3.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature4.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature4.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+                <div class="col-md-12">
+                    <!-- image -->
+                    <a href="{% static 'img/feature5.jpg' %}" data-gal="prettyPhoto[gallery]" title="">
+                        <img src="{% static 'img/feature5.jpg' %}" class="img-rounded img-responsive" alt="">
+                    </a>
+                </div>
+                <!-- /col-md-12 -->
+            </div>
+            <!-- /owl-carousel -->
+        </div>
+        <!-- /container-->
+    </section>
+    <!-- /Section ends -->
+{% endblock %}

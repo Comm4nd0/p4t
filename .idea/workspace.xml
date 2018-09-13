@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b071a8e1-5178-4b13-b933-2608f16ea356" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../cmdlb/contact/templates/contact_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paws4thought/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paws4thought/templates/team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.idea/cmdlb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.idea/cmdlb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cmdlb/.idea/dataSources.local.xml" afterDir="false" />
@@ -26,10 +28,10 @@
       <change beforePath="$PROJECT_DIR$/../cmdlb/packages/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cmdlb/sites/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../oeg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../oeg/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/p4t/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/p4t/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/templates/1-2-1_training.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/1-2-1_training.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/templates/daycare.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/daycare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/templates/training.html" beforeDir="false" afterPath="$PROJECT_DIR$/services/templates/training.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p4t/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/p4t/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paws4thought/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,32 +53,32 @@
         <counts>
           <entry key="css" value="11" />
           <entry key="gitignore" value="9" />
-          <entry key="html" value="1453" />
-          <entry key="py" value="437" />
+          <entry key="html" value="1523" />
+          <entry key="py" value="565" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="11" />
-          <entry key="HTML" value="1453" />
+          <entry key="HTML" value="1523" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="437" />
+          <entry key="Python" value="565" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
           <entry key="gitignore" value="3" />
-          <entry key="html" value="19" />
-          <entry key="py" value="11" />
+          <entry key="html" value="23" />
+          <entry key="py" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="19" />
+          <entry key="HTML" value="23" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="11" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -93,22 +95,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-              <folding>
-                <marker date="1536866817847" expanded="true" signature="86:91" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p4t/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="170">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -117,55 +107,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="246" column="28" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="246" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
+            <state relative-caret-position="306">
+              <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <marker date="1536874753957" expanded="true" signature="82:83" ph="..." />
+                <marker date="1536874753957" expanded="true" signature="82:87" ph="..." />
+                <marker date="1536874753957" expanded="true" signature="145:150" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paws4thought/templates/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/templates/1-2-1_training.html">
+        <entry file="file://$PROJECT_DIR$/paws4thought/templates/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/templates/training.html">
+        <entry file="file://$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/templates/daycare.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/p4t/static/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="3810" selection-start-line="3810" selection-end-line="3811" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/templates/services.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="151" selection-start-line="151" selection-end-line="151" selection-end-column="14" />
+            <state relative-caret-position="408">
+              <caret line="273" column="28" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="273" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -193,20 +188,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/p4t/local_settings.py" />
-        <option value="$PROJECT_DIR$/paws4thought/views.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/paws4thought/templates/home.html" />
         <option value="$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/index.html" />
         <option value="$PROJECT_DIR$/services/templates/services.html" />
         <option value="$PROJECT_DIR$/services/urls.py" />
-        <option value="$PROJECT_DIR$/p4t/urls.py" />
         <option value="$PROJECT_DIR$/p4t/settings.py" />
         <option value="$PROJECT_DIR$/services/views.py" />
         <option value="$PROJECT_DIR$/p4t/static/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/services/templates/daycare.html" />
-        <option value="$PROJECT_DIR$/p4t/templates/base.html" />
         <option value="$PROJECT_DIR$/services/templates/training.html" />
         <option value="$PROJECT_DIR$/services/templates/1-2-1_training.html" />
+        <option value="$PROJECT_DIR$/paws4thought/views.py" />
+        <option value="$PROJECT_DIR$/p4t/urls.py" />
+        <option value="$PROJECT_DIR$/p4t/templates/base.html" />
+        <option value="$PROJECT_DIR$/paws4thought/templates/about.html" />
+        <option value="$PROJECT_DIR$/paws4thought/templates/team.html" />
       </list>
     </option>
   </component>
@@ -252,6 +249,17 @@
               <item name="p4t" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p4t" type="462c0819:PsiDirectoryNode" />
+              <item name="paws4thought" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
+              <item name="p4t" type="462c0819:PsiDirectoryNode" />
+              <item name="paws4thought" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
@@ -377,7 +385,7 @@
     <frame x="-4" y="0" width="1928" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -443,17 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-          <folding>
-            <marker date="1536779277467" expanded="true" signature="82:83" ph="..." />
-            <marker date="1536779277467" expanded="true" signature="82:87" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -506,16 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../oeg/oeg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -523,37 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p4t/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p4t/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/p4t/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="3810" selection-start-line="3810" selection-end-line="3811" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <marker date="1536866817847" expanded="true" signature="86:91" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="68" column="75" selection-start-line="68" selection-start-column="75" selection-end-line="68" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/templates/training.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -594,8 +547,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/templates/1-2-1_training.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="24" lean-forward="true" selection-end-line="96" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="273" column="28" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="273" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <marker date="1536866817847" expanded="true" signature="86:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p4t/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <marker date="1536874753957" expanded="true" signature="82:83" ph="..." />
+            <marker date="1536874753957" expanded="true" signature="82:87" ph="..." />
+            <marker date="1536874753957" expanded="true" signature="145:150" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p4t/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/themeforest-19523612-petz-responsive-html-template/Petz_html/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="246" column="28" lean-forward="true" selection-start-line="94" selection-start-column="6" selection-end-line="246" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p4t/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="30" column="58" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/templates/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="159" column="70" selection-start-line="159" selection-start-column="70" selection-end-line="159" selection-end-column="70" />
         </state>
       </provider>
     </entry>

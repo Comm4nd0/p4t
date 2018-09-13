@@ -61,7 +61,12 @@
         <div class="collapse navbar-collapse" id="navbar-brand-centered">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="{% url 'about' %}">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'team' %}">The Team</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" href="{% url 'services' %}">Services<b class="caret"></b></a>
                     <ul class="dropdown-menu">

@@ -64,7 +64,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{% url 'about' %}">Paws 4 Thoughts</a></li>
+                        <li><a href="{% url 'about' %}">Paws 4 Thought</a></li>
                         <li><a href="{% url 'team' %}">The Team</a></li>
                     </ul>
                 </li>
@@ -72,9 +72,9 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'services' %}">Overview</a></li>
-                        <li><a href="{% url 'day care' %}">Doggy Day Care</a></li>
-                        <li><a href="{% url 'training' %}">Training Classes</a></li>
-                        <li><a href="{% url '1-2-1 training' %}">1-2-1 Training</a></li>
+                        {% for item in services.all %}
+                        <li><a href="{% url 'service' item.title %}">{{ item.title }}</a></li>
+                        {% endfor %}
                     </ul>
                 </li>
             </ul>

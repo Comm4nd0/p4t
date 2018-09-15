@@ -1,17 +1,23 @@
 from django.shortcuts import render, redirect
 from django.core.mail import EmailMessage
 from django.http import HttpResponse
+from services.models import Service, Overview
 import json
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    services = Service.objects
+    overview = Overview.objects.get()
+    return render(request, 'home.html', {'overview': overview,
+                                         'services': services})
 
 def about(request):
-    return render(request, 'about.html')
+    services = Service.objects
+    return render(request, 'about.html', {'services': services})
 
 def team(request):
-    return render(request, 'team.html')
+    services = Service.objects
+    return render(request, 'team.html', {'services': services})
 
 def contact_form(request):
     if request.POST:

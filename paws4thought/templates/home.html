@@ -356,22 +356,20 @@
                 </p>
                 <h4 class="margin1">Send us a Message</h4>
                 <!-- Form Starts -->
-                <div id="contact_form">
-                    <form method="POST" action="{% url 'contact_form' %}" enctype="multipart/form-data">
+                <div id="contactForm">
                     <div class="form-group">
                         {% csrf_token %}
                         <label>Name<span class="required">*</span></label>
-                        <input type="text" name="name" class="form-control input-field" required="">
+                        <input type="text" name="name" id="name" class="form-control input-field" required="">
                         <label>Email Adress <span class="required">*</span></label>
-                        <input type="email" name="email" class="form-control input-field" required="">
+                        <input type="email" name="email" id="email" class="form-control input-field" required="">
                         <label>Subject</label>
-                        <input type="text" name="subject" class="form-control input-field" required="">
+                        <input type="text" name="subject" id="subject" class="form-control input-field" required="">
                         <label>Message<span class="required">*</span></label>
                         <textarea name="message" id="message" class="textarea-field form-control" rows="3"
                                   required=""></textarea>
                     </div>
-                    <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Send message</button>
-                        </form>
+                    <button type="submit" id="contactMessage" value="Submit" class="btn center-block">Send message</button>
                 </div>
                 <!-- Contact results -->
                 <div id="contact_results"></div>

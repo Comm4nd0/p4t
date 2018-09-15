@@ -101,7 +101,7 @@
                                         </div>
                                         <div class="info">
                                             <h4>{{ service.title }}</h4>
-                                            <p>{{ service.body|linebreaks|slice:":255" }}</p>
+                                            <p>{{ service.body|linebreaks|truncatewords:100 }}</p>
                                             <!-- Button-->
                                             <a class="btn" href="services/{{ service.title }}">Read More</a>
                                         </div>

@@ -6,10 +6,13 @@ import gallery.models
 
 def services(request):
     services = Service.objects
-    main = Overview.objects.get()
+    try:
+        overview = Overview.objects.get()
+    except Overview.DoesNotExist:
+        overview = ''
     service = Service.objects
     return render(request, 'services.html', {'services': services,
-                                             'main': main,
+                                             'overview': overview,
                                              'service': service})
 
 def service(request, service_title):

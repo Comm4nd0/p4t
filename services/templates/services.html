@@ -3,7 +3,7 @@
 {% block content %}
     <style>
         .jumbotron {
-            background: url({{ main.header_image_1600x660.url }});
+            background: url({{ overview.header_image_1600x660.url }});
         }
     </style>
     <!-- Section Services -->
@@ -18,56 +18,56 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h3>{{ main.sub_heading }}</h3>
-                    <p>{{ main.body|linebreaks }}
+                    <h3>{{ overview.sub_heading }}</h3>
+                    <p>{{ overview.body|linebreaks }}
                     </p>
                     <!-- ul custom-->
                     <ul class="custom no-margin">
-                        {% if main.bullets1 %}
-                            <li>{{ main.bullets1 }}</li>
+                        {% if overview.bullets1 %}
+                            <li>{{ overview.bullets1 }}</li>
                         {% endif %}
 
-                        {% if main.bullets2 %}
-                            <li>{{ main.bullets2 }}</li>
+                        {% if overview.bullets2 %}
+                            <li>{{ overview.bullets2 }}</li>
                         {% endif %}
 
-                        {% if main.bullets3 %}
-                            <li>{{ main.bullets3 }}</li>
+                        {% if overview.bullets3 %}
+                            <li>{{ overview.bullets3 }}</li>
                         {% endif %}
 
-                        {% if main.bullets4 %}
-                            <li>{{ main.bullets4 }}</li>
+                        {% if overview.bullets4 %}
+                            <li>{{ overview.bullets4 }}</li>
                         {% endif %}
 
-                        {% if main.bullets5 %}
-                            <li>{{ main.bullets5 }}</li>
+                        {% if overview.bullets5 %}
+                            <li>{{ overview.bullets5 }}</li>
                         {% endif %}
 
-                        {% if main.bullets6 %}
-                            <li>{{ main.bullets6 }}</li>
+                        {% if overview.bullets6 %}
+                            <li>{{ overview.bullets6 }}</li>
                         {% endif %}
 
-                        {% if main.bullets7 %}
-                            <li>{{ main.bullets7 }}</li>
+                        {% if overview.bullets7 %}
+                            <li>{{ overview.bullets7 }}</li>
                         {% endif %}
 
-                        {% if main.bullets8 %}
-                            <li>{{ main.bullets8 }}</li>
+                        {% if overview.bullets8 %}
+                            <li>{{ overview.bullets8 }}</li>
                         {% endif %}
 
-                        {% if main.bullets9 %}
-                            <li>{{ main.bullets9 }}</li>
+                        {% if overview.bullets9 %}
+                            <li>{{ overview.bullets9 }}</li>
                         {% endif %}
 
-                        {% if main.bullets10 %}
-                            <li>{{ main.bullets10 }}</li>
+                        {% if overview.bullets10 %}
+                            <li>{{ overview.bullets10 }}</li>
                         {% endif %}
 
                     </ul>
                 </div>
                 <!-- /col-md-7-->
                 <div class="col-md-5">
-                    <img src="{{ main.image_800x800.url }}" class="center-block img-responsive" alt="">
+                    <img src="{{ overview.image_800x800.url }}" class="center-block img-responsive" alt="">
                 </div>
                 <!-- col-md-5-->
             </div>
@@ -75,18 +75,18 @@
             <div class="row">
                 <!-- owl-services -->
                 <div id="owl-services" class="owl-carousel">
-                    {% for item in service.all %}
+                    {% for item in services.all %}
                         <!-- Feature Box 1  -->
                         <div class="col-xs-12">
                             <div class="box_icon">
                                 <div class="icon">
                                     <!-- icon -->
                                     <div class="image">
-                                        <img src="{{ item.main_image_500x400.url }}" class="img-responsive" alt="">
+                                        <img src="{{ item.main_image_500x400.url }}" class="img-responsive" alt="{{ item.title }}">
                                     </div>
                                     <div class="info">
                                         <h4>{{ item.title }}</h4>
-                                        <p>{{ item.body|linebreaks|slice:":255" }}...</p>
+                                        <p>{{ item.body|linebreaks|truncatewords:75 }}...</p>
                                         <!-- Button-->
                                         <a class="btn" href="{{ item.title }}">Read More</a>
                                     </div>

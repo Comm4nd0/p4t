@@ -7,7 +7,10 @@ import json
 # Create your views here.
 def home(request):
     services = Service.objects
-    overview = Overview.objects.get()
+    try:
+        overview = Overview.objects.get()
+    except Overview.DoesNotExist:
+        overview = ''
     return render(request, 'home.html', {'overview': overview,
                                          'services': services})
 

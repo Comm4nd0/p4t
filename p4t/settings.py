@@ -8,6 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INSTALLED_APPS = [
     'paws4thought',
     'services',
+    'gallery',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

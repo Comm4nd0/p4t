@@ -1,9 +1,13 @@
 from django.shortcuts import render
+from .models import Overview, Service
 
 # Create your views here.
 
 def services(request):
-    return render(request, 'services.html')
+    main = Overview.objects.get()
+    service = Service.objects
+    return render(request, 'services.html', {'main': main,
+                                             'service': service})
 
 def daycare(request):
     return render(request, 'daycare.html')

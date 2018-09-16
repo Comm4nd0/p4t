@@ -3,7 +3,7 @@
 {% block content %}
 <style>
     .jumbotron {
-        background: url({{ contact_details.header_image_1600x660.url }});
+        background: url({{ contact_detail.header_image_1600x660.url }});
     }
 </style>
 <!-- Section Contact -->
@@ -11,7 +11,7 @@
     <div class="jumbotron" data-stellar-background-ratio="0.5">
         <!-- Heading -->
         <div class="jumbo-heading" data-stellar-background-ratio="1.2">
-            <h1>{{ contact_details.page_title }}</h1>
+            <h1>{{ contact_detail.page_title }}</h1>
         </div>
     </div>
     <!-- container -->
@@ -19,22 +19,22 @@
         <div class="row">
             <!-- Contact Info -->
             <div class="col-lg-5 col-md-5">
-                <h3>{{ contact_details.sub_heading }}</h3>
+                <h3>{{ contact_detail.sub_heading }}</h3>
                 <ul class="list-inline">
-                    <li><i class="fa fa-envelope"></i><a href="mailto:youremailaddress">{{ contact_details.email }}</a></li>
-                    <li><i class="fa fa-phone margin-icon"></i>Call Us {{ contact_details.landline }}</li>
-                    <li><i class="fa fa-mobile margin-icon"></i>Call Us {{ contact_details.mobile }}</li>
-                    <li><i class="fa fa-map-marker margin-icon"></i>{{ contact_details.address }}</li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:youremailaddress">{{ contact_detail.email }}</a></li>
+                    <li><i class="fa fa-phone margin-icon"></i>Call Us {{ contact_detail.landline }}</li>
+                    <li><i class="fa fa-mobile margin-icon"></i>Call Us {{ contact_detail.mobile }}</li>
+                    <li><i class="fa fa-map-marker margin-icon"></i>{{ contact_detail.address }}</li>
                 </ul>
                 <!-- address info -->
-                <p>{{ contact_details.body|linebreaks }}
+                <p>{{ contact_detail.body|linebreaks }}
                 </p>
-                <img src="{{ contact_details.image_600x350.url }}" alt="" class="img-rounded center-block img-responsive">
+                <img src="{{ contact_detail.image_600x350.url }}" alt="" class="img-rounded center-block img-responsive">
             </div>
             <!-- /col-lg-5-->
             <!-- Contact Form -->
             <div class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 res-margin">
-                <h3>{{ contact_details.form_heading }}</h3>
+                <h3>{{ contact_detail.form_heading }}</h3>
                 <!-- Form Starts -->
                 <div id="contactForm">
                     <div class="form-group">
@@ -49,7 +49,7 @@
                         <textarea name="message" id="message" class="textarea-field form-control" rows="3"
                                   required=""></textarea>
                     </div>
-                    <button type="submit" id="contactMessage" value="Submit" class="btn center-block">{{ contact_details.send_button_text }}
+                    <button type="submit" id="contactMessage" value="Submit" class="btn center-block">{{ contact_detail.send_button_text }}
                     </button>
                 </div>
                 <!-- Contact results -->

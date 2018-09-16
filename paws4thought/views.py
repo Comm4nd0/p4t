@@ -38,9 +38,11 @@ def company(request):
         company = ''
 
     features = Feature.objects
+    contact_details = ContactDetail.objects.first()
     return render(request, 'company.html', {'services': services,
                                             'company': company,
-                                            'features': features})
+                                            'features': features,
+                                            'contact_detail': contact_details,})
 
 def team(request):
     services = Service.objects
@@ -49,9 +51,11 @@ def team(request):
         teampage = TeamDetail.objects.first()
     except TeamDetail.DoesNotExist:
         teampage = ''
+    contact_details = ContactDetail.objects.first()
     return render(request, 'team.html', {'services': services,
                                          'members': members,
-                                         'teampage': teampage})
+                                         'teampage': teampage,
+                                         'contact_detail': contact_details,})
 
 def contact_form(request):
     if request.POST:

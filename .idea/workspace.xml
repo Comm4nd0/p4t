@@ -9,10 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../oeg/.gitignore_LOCAL_4165" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../oeg/.gitignore_REMOTE_4165" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../oeg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../oeg/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paws4thought/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paws4thought/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paws4thought/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paws4thought/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +35,7 @@
         <counts>
           <entry key="css" value="39" />
           <entry key="gitignore" value="9" />
-          <entry key="html" value="4765" />
+          <entry key="html" value="4778" />
           <entry key="js" value="36" />
           <entry key="py" value="3793" />
         </counts>
@@ -46,7 +43,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="39" />
-          <entry key="HTML" value="4765" />
+          <entry key="HTML" value="4778" />
           <entry key="JavaScript" value="36" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="3793" />
@@ -79,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+            <state relative-caret-position="525">
+              <caret line="182" column="69" selection-start-line="182" selection-start-column="69" selection-end-line="182" selection-end-column="69" />
               <folding>
                 <element signature="e#718#777#0#HTML" expanded="true" />
               </folding>
@@ -104,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paws4thought/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="173" column="25" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+            <state relative-caret-position="330">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <marker date="1537103900496" expanded="true" signature="150:151" ph="..." />
                 <marker date="1537103900496" expanded="true" signature="971:1252" ph="..." />
@@ -245,24 +242,6 @@
               <item name="p4t" type="462c0819:PsiDirectoryNode" />
               <item name="paws4thought" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p4t" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p4t" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="themeforest-19523612-petz-responsive-html-template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p4t" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="themeforest-19523612-petz-responsive-html-template" type="462c0819:PsiDirectoryNode" />
-              <item name="Petz_html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -732,26 +711,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paws4thought/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="173" column="25" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="28" />
           <folding>
             <marker date="1537103900496" expanded="true" signature="150:151" ph="..." />
             <marker date="1537103900496" expanded="true" signature="971:1252" ph="..." />
             <marker date="1537103900496" expanded="true" signature="1283:1782" ph="..." />
             <marker date="1537103900496" expanded="true" signature="7956:7957" ph="..." />
             <marker date="1537103900496" expanded="true" signature="8132:8137" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -769,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        <state relative-caret-position="525">
+          <caret line="182" column="69" selection-start-line="182" selection-start-column="69" selection-end-line="182" selection-end-column="69" />
           <folding>
             <element signature="e#718#777#0#HTML" expanded="true" />
           </folding>

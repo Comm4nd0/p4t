@@ -80,6 +80,7 @@
             <!-- /row -->
         </div>
         <!-- /container -->
+
         {% if images %}
             <!-- owl slider -->
             <div class="container-fluid margin1">
@@ -87,8 +88,8 @@
                 {% for image in images.all %}
                     <div class="col-md-12">
                         <!-- image -->
-                        <a href="{{ image.image.url }}" data-gal="prettyPhoto[gallery]" title="">
-                            <img src="{{ image.image.url }}" class="img-rounded img-responsive" alt="">
+                        <a href="{{ image.image_800x800.url }}" data-gal="prettyPhoto[gallery]" title="">
+                            <img src="{{ image.image_800x800.url }}" class="img-rounded img-responsive" alt="">
                         </a>
                     </div>
                     <!-- /col-md-12 -->

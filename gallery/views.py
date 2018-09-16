@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import Image, GalleryDetail
+from .models import Photo, GalleryDetail
 from contact.models import ContactDetail
 from services.views import Service
 # Create your views here.
 
 def gallery(request):
-    images = Image.objects
+    images = Photo.objects
     detail = GalleryDetail.objects.first()
     services = Service.objects
     contact_details = ContactDetail.objects.first()

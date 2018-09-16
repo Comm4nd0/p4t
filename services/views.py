@@ -7,10 +7,7 @@ import gallery.models
 
 def services(request):
     services = Service.objects
-    # try:
     overview = ServicesDetail.objects.first()
-    # except ServicesDetail.DoesNotExist:
-    #     overview = ''
     service = Service.objects
     contact_details = ContactDetail.objects.first()
     return render(request, 'services.html', {'services': services,
@@ -21,7 +18,7 @@ def services(request):
 def service(request, service_title):
     services = Service.objects
     service = Service.objects.get(title=service_title)
-    images = gallery.models.Image.objects.filter(service__title=service_title)
+    images = gallery.models.Photo.objects.filter(service__title=service_title)
     contact_details = ContactDetail.objects.first()
     return render(request, 'service.html', {'services': services,
                                             'service': service,

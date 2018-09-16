@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Overview, Service
+from .models import ServicesPage, Service
 import gallery.models
 
 # Create your views here.

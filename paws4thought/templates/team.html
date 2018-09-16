@@ -1,24 +1,25 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
-
+    <style>
+        .jumbotron {
+            background: url({{ teampage.header_image_1600x660.url }});
+        }
+    </style>
     <!-- Section Team -->
     <section id="adoption" class="pages">
         <div class="jumbotron" data-stellar-background-ratio="0.5">
             <!-- Heading -->
             <div class="jumbo-heading" data-stellar-background-ratio="1.2">
-                <h1>Our Team</h1>
+                <h1>{{ teampage.title }}</h1>
             </div>
         </div>
         <!-- container-->
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h3>Meet our Team</h3>
-                    <p>Elit uasi quidem minus id omnis a nibh fusce mollis imperdie tlorem ipuset phas ellus ac sodales
-                        Lorem ipsum dolor Phas ellus
-                        ac sodales felis tiam non metus. lorem ipsum dolor sit amet, consectetur adipisicing elit uasi
-                        quidem minus id omnis a nibh fusce mollis imperdie tlorem ipuset campas fincas
+                    <h3>{{ teampage.sub_heading }}</h3>
+                    <p>{{ teampage.body|linebreaks }}
                     </p>
                 </div>
                 <!-- /col-lg-10 -->
@@ -26,28 +27,37 @@
             <!-- /row -->
             <div class="row margin1">
                 <div class="owl-carousel" id="owl-team">
+                    {% for member in members.all %}
                     <!-- Team member 1 -->
                     <div class="team-wrap col-md-12">
                         <div class="member text-center">
                             <div class="wrap">
                                 <!-- Info -->
                                 <div class="info">
-                                    <h3 class="name">John Doe</h3>
-                                    <h4 class="position">Veterinarian</h4>
+                                    <h3 class="name">{{ member.name }}</h3>
+                                    <h4 class="position">{{ member.position }}</h4>
                                 </div>
                                 <!-- /info -->
                                 <!-- image -->
-                                <img src="{% static 'img/team1.jpg' %}" alt="" class="img-circle img-responsive">
+                                <img src="{{ member.image_350x350.url }}" alt="" class="img-circle img-responsive">
                             </div>
                             <!-- /wrap -->
                             <div class="more">
-                                <p>Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
+                                <p>{{ member.bio }}</p>
                                 <!-- Description -->
                                 <div class="social-media smaller">
-                                    <a href="#" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                    {% if member.facebook %}
+                                    <a href="{{ member.facebook }}" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    {% endif %}
+                                {% if member.twitter %}
+                                    <a href="{{ member.twitter }}" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                {% endif %}
+                                {% if member.google_plus %}
+                                    <a href="{{ member.google_plus }}" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                                {% endif %}
+                                {% if member.linkedin %}
+                                    <a href="{{ member.linkedin }}" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                {% endif %}
                                 </div>
                                 <!-- /social-media -->
                             </div>
@@ -56,126 +66,8 @@
                         <!-- / member -->
                     </div>
                     <!--/ team-wrap -->
-                    <!-- Team member 2 -->
-                    <div class="team-wrap col-md-12">
-                        <div class="member text-center">
-                            <div class="wrap">
-                                <!-- Info -->
-                                <div class="info">
-                                    <h3 class="name">Maria Smith</h3>
-                                    <h4 class="position">Veterinarian</h4>
-                                </div>
-                                <!-- /info -->
-                                <!-- image -->
-                                <img src="{% static 'img/team2.jpg' %}" alt="" class="img-circle img-responsive">
-                            </div>
-                            <!-- /wrap -->
-                            <div class="more">
-                                <p>Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <!-- Description -->
-                                <div class="social-media smaller">
-                                    <a href="#" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                                <!-- /social-media -->
-                            </div>
-                            <!-- /more -->
-                        </div>
-                        <!-- / member -->
-                    </div>
-                    <!--/ team-wrap -->
-                    <!-- Team member 3 -->
-                    <div class="team-wrap col-md-12">
-                        <div class="member text-center">
-                            <div class="wrap">
-                                <!-- Info -->
-                                <div class="info">
-                                    <h3 class="name">Paula Larson</h3>
-                                    <h4 class="position">Assistant</h4>
-                                </div>
-                                <!-- /info -->
-                                <!-- image -->
-                                <img src="{% static 'img/team3.jpg' %}" alt="" class="img-circle img-responsive">
-                            </div>
-                            <!-- /wrap -->
-                            <div class="more">
-                                <p>Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <!-- Description -->
-                                <div class="social-media smaller">
-                                    <a href="#" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                                <!-- /social-media -->
-                            </div>
-                            <!-- /more -->
-                        </div>
-                        <!-- / member -->
-                    </div>
-                    <!--/ team-wrap -->
-                    <!-- Team member 4-->
-                    <div class="team-wrap col-md-12">
-                        <div class="member text-center">
-                            <div class="wrap">
-                                <!-- Info -->
-                                <div class="info">
-                                    <h3 class="name">Anna Luise </h3>
-                                    <h4 class="position">Pet Expert</h4>
-                                </div>
-                                <!-- /info -->
-                                <!-- image -->
-                                <img src="{% static 'img/team4.jpg' %}" alt="" class="img-circle img-responsive">
-                            </div>
-                            <!-- /wrap -->
-                            <div class="more">
-                                <p>Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <!-- Description -->
-                                <div class="social-media smaller">
-                                    <a href="#" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                                <!-- /social-media -->
-                            </div>
-                            <!-- /more -->
-                        </div>
-                        <!-- / member -->
-                    </div>
-                    <!--/ team-wrap -->
-                    <!-- Team member 5 -->
-                    <div class="team-wrap col-md-12">
-                        <div class="member text-center">
-                            <div class="wrap">
-                                <!-- Info -->
-                                <div class="info">
-                                    <h3 class="name">Marlon Mars</h3>
-                                    <h4 class="position">Sales Manager</h4>
-                                </div>
-                                <!-- /info -->
-                                <!-- image -->
-                                <img src="{% static 'img/team5.jpg' %}" alt="" class="img-circle img-responsive">
-                            </div>
-                            <!-- /wrap -->
-                            <div class="more">
-                                <p>Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <!-- Description -->
-                                <div class="social-media smaller">
-                                    <a href="#" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                                <!-- /social-media -->
-                            </div>
-                            <!-- /more -->
-                        </div>
-                        <!-- / member -->
-                    </div>
-                    <!--/ team-wrap -->
+                    {% endfor %}
+
                 </div>
                 <!-- /owl-team-->
             </div>

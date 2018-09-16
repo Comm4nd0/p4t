@@ -1,8 +1,9 @@
 from django.db import models
 
+
 # Create your models here.
 
-class Company(models.Model):
+class CompanyPage(models.Model):
     title = models.CharField(max_length=100, blank=True)
     sub_heading = models.CharField(max_length=100, blank=True)
     header_image_1600x660 = models.ImageField(blank=True)
@@ -20,6 +21,29 @@ class Company(models.Model):
     accordion_body3 = models.TextField(blank=True)
 
     home_page_image_800x1000 = models.ImageField(blank=True)
+
+
+class TeamPage(models.Model):
+    page_title = models.CharField(max_length=100, blank=True)
+    sub_heading = models.CharField(max_length=100, blank=True)
+    header_image_1600x660 = models.ImageField(blank=True)
+    body = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.page_title
+
+class TeamMember(models.Model):
+    name = models.CharField(max_length=100, blank=True)
+    position = models.CharField(max_length=100, blank=True)
+    image_350x350 = models.ImageField(blank=True)
+    bio = models.TextField(blank=True)
+    facebook = models.CharField(max_length=100, blank=True)
+    twitter = models.CharField(max_length=100, blank=True)
+    google_plus = models.CharField(max_length=100, blank=True)
+    linkedin = models.CharField(max_length=100, blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Feature(models.Model):
@@ -102,11 +126,14 @@ class Feature(models.Model):
         ('flaticon-pet-carrier', 'flaticon-pet-carrier'),
         ('flaticon-pet-food', 'flaticon-pet-food'),
         ('flaticon-pet-friendly', 'flaticon-pet-friendly'),
-        ('flaticon-pet-hotel-sign-with-a-dog-and-a-cat-under-a-roof-line', 'flaticon-pet-hotel-sign-with-a-dog-and-a-cat-under-a-roof-line'),
-        ('flaticon-pet-hotel-symbols-of-three-stars-a-semicircle-and-a-bone-black-shape', 'flaticon-pet-hotel-symbols-of-three-stars-a-semicircle-and-a-bone-black-shape'),
+        ('flaticon-pet-hotel-sign-with-a-dog-and-a-cat-under-a-roof-line',
+         'flaticon-pet-hotel-sign-with-a-dog-and-a-cat-under-a-roof-line'),
+        ('flaticon-pet-hotel-symbols-of-three-stars-a-semicircle-and-a-bone-black-shape',
+         'flaticon-pet-hotel-symbols-of-three-stars-a-semicircle-and-a-bone-black-shape'),
         ('flaticon-pet-shelter', 'flaticon-pet-shelter'),
         ('flaticon-pets', 'flaticon-pets'),
-        ('flaticon-pets-hotel-symbol-with-a-dog-and-a-cat-in-a-circle-with-one-star', 'flaticon-pets-hotel-symbol-with-a-dog-and-a-cat-in-a-circle-with-one-star'),
+        ('flaticon-pets-hotel-symbol-with-a-dog-and-a-cat-in-a-circle-with-one-star',
+         'flaticon-pets-hotel-symbol-with-a-dog-and-a-cat-in-a-circle-with-one-star'),
         ('flaticon-play', 'flaticon-play'),
         ('flaticon-poodle', 'flaticon-poodle'),
         ('flaticon-rat', 'flaticon-rat'),

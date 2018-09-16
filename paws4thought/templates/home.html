@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+    <style>
+        #contact-index {
+            background: url({{ contact_detail.image_700x458_homepage.url }}) no-repeat;
+            background-attachment: fixed;
+            background-position: 0% bottom;
+            background-color: #fff;
+        }
+    </style>
     <!-- Full Page Image Background Slider -->
     <div class="slider-container">
         <!-- Controls -->
@@ -206,7 +214,7 @@
                 <!-- /col-md-5-->
             </div>
 
-        {% include 'features.html' %}
+            {% include 'features.html' %}
 
         </div>
         <!-- /container -->
@@ -217,22 +225,23 @@
     <section id="contact-index">
         <div class="container">
             <div class="section-heading">
-                <h2>Contact Us</h2>
+                <h2>{{ contact_detail.page_title }}</h2>
             </div>
             <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-2">
                 <!-- contact info -->
                 <h4>Information </h4>
                 <ul class="list-inline">
-                    <li><i class="fa fa-envelope"></i><a href="mailto:claire@paws4thoughtdogs.com">claire@paws4thoughtdogs.com</a>
+                    <li><i class="fa fa-envelope"></i><a
+                            href="mailto:claire@paws4thoughtdogs.com">{{ contact_detail.email }}</a>
                     </li>
-                    <li><i class="fa fa-phone margin-icon"></i>01491 576290</li>
-                    <li><i class="fa fa-mobile margin-icon"></i>07966 184 948</li>
-                    <li><i class="fa fa-map-marker margin-icon"></i>Need your address!</li>
+                    <li><i class="fa fa-phone margin-icon"></i>{{ contact_detail.landline }}</li>
+                    <li><i class="fa fa-mobile margin-icon"></i>{{ contact_detail.mobile }}</li>
+                    <li><i class="fa fa-map-marker margin-icon"></i>{{ contact_detail.address }}</li>
                 </ul>
                 <!-- address info -->
-                <p>Feel free to contact us should you have any questions about anything at all!
+                <p>{{ contact_detail.body|linebreaks }}
                 </p>
-                <h4 class="margin1">Send us a Message</h4>
+                <h4 class="margin1">{{ contact_detail.form_heading }}</h4>
                 <!-- Form Starts -->
                 <div id="contactForm">
                     <div class="form-group">

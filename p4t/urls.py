@@ -11,5 +11,6 @@ urlpatterns = [
                   path('The Team/', views.team, name='team'),
                   path('services/', include('services.urls')),
                   path('gallery/', include('gallery.urls')),
+                  path('contact/', include('contact.urls')),
                   path('contact_form/', views.contact_form, name='contact_form'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

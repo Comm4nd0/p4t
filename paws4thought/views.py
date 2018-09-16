@@ -3,6 +3,7 @@ from django.core.mail import EmailMessage
 from django.http import HttpResponse
 from services.models import Service, ServicesDetail
 from .models import Feature, CompanyDetail, TeamMember, TeamDetail
+from contact.models import ContactDetail
 import json
 
 # Create your views here.
@@ -18,10 +19,13 @@ def home(request):
         company = ''
 
     features = Feature.objects
+
+    contact_details = ContactDetail.objects.first()
     return render(request, 'home.html', {'overview': overview,
                                          'services': services,
                                          'company': company,
-                                         'features': features})
+                                         'features': features,
+                                         'contact_detail': contact_details})
 
 def company(request):
     services = Service.objects

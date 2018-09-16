@@ -9,6 +9,7 @@ INSTALLED_APPS = [
     'paws4thought',
     'services',
     'gallery',
+    'contact',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

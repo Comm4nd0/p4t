@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <section id="adoption" class="pages">
+        <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <div class="container">
+                {% if error %}
+                    <div class="alert alert-warning">
+                        <strong>Warning!</strong> {{ error }}
+                    </div>
+                {% endif %}
+                <br/>
+
+                <h2>Login</h2>
+
+                <form class="" action="{% url 'login' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="Username" name="username"/>
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="password" placeholder="Password" name="password"/>
+                        </div>
+                    </div>
+                    </br>
+                    <h6>No account? <a href="{% url 'register' %}">Register</a></h6>
+                    <input class="btn btn-primary" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

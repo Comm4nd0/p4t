@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section id="adoption" class="pages">
+        <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <div class="container">
+        {% if error %}
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> {{ error }}
+            </div>
+        {% endif %}
+        <br/>
+
+        <h2>Signup</h2>
+        <h5>Fill in the information below to create an account.</h5>
+        <form class="" action="{% url 'register' %}" method="POST">
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="col">
+                    <input class="form-control" type="text" placeholder="Username" name="username"/>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="password" placeholder="Password" name="password1"/>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="password" placeholder="Password again" name="password2"/>
+                </div>
+            </div>
+            <br>
+            <h6><small>Please be aware that all accounts are disabled by default until after we review your account.</small></h6>
+            <br/>
+            <input class="btn btn-primary" type="submit" value="Sign Up!">
+        </form>
+    </div>
+        </div>
+    </section>
+{% endblock %}

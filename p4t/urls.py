@@ -5,12 +5,13 @@ from django.conf.urls.static import static
 from paws4thought import views
 
 urlpatterns = [
-                  path('admin/', admin.site.urls),
+                  path('admin/', admin.site.urls, name='admin'),
                   path('', views.home, name='home'),
                   path('The Company/', views.company, name='company'),
                   path('The Team/', views.team, name='team'),
                   path('services/', include('services.urls')),
                   path('gallery/', include('gallery.urls')),
                   path('contact/', include('contact.urls')),
+                  path('members/', include('members.urls')),
                   path('contact_form/', views.contact_form, name='contact_form'),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -73,7 +73,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'services' %}">All Services</a></li>
                         {% for item in services.all %}
-                        <li><a href="{% url 'service' item.title %}">{{ item.title }}</a></li>
+                            <li><a href="{% url 'service' item.title %}">{{ item.title }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
@@ -81,10 +81,17 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{% url 'gallery' %}">Gallery</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog<b class="caret"></b></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% if user.is_authenticated %}{{ user.get_username }}{% else %}Account{% endif %}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="blog.html">Blog Home</a></li>
-                        <li><a href="blog-single.html">Blog Post</a></li>
+                        {% if user.is_authenticated %}
+                            {% if user.is_superuser %}
+                                <li><a href="/admin">Admin</a></li>
+                            {% endif %}
+                            <li><a href="{% url 'logout' %}">Logout</a></li>
+                        {% else %}
+                            <li><a href="{% url 'login' %}">Login</a></li>
+                            <li><a href="{% url 'register' %}">Register</a></li>
+                        {% endif %}
                     </ul>
                 </li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -113,7 +120,8 @@
             <ul class="list-unstyled">
                 <li><i class="fa fa-phone"></i>{{ contact_detail.landline }}</li>
                 <li><i class="fa fa-mobile"></i>{{ contact_detail.mobile }}</li>
-                <li><i class="fa fa-envelope"></i>Email: <a href="mailto:{{ contact_detail.email }}">{{ contact_detail.email }}</a>
+                <li><i class="fa fa-envelope"></i>Email: <a
+                        href="mailto:{{ contact_detail.email }}">{{ contact_detail.email }}</a>
                 </li>
                 <li><i class="fa fa-map-marker"></i>{{ contact_detail.address }}</li>
             </ul>
@@ -124,7 +132,8 @@
             <!--Social icons -->
             <div class="social-media">
                 <a href="#" title=""><i class="fa fa-twitter"></i></a>
-                <a href="https://www.facebook.com/p4tdogs/posts/2007997949264427" title=""><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/p4tdogs/posts/2007997949264427" title=""><i
+                        class="fa fa-facebook"></i></a>
                 <a href="#" title=""><i class="fa fa-google-plus"></i></a>
                 <a href="#" title=""><i class="fa fa-instagram"></i></a>
             </div>

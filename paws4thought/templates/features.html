@@ -1,0 +1,19 @@
+<div class="margin1 text-center">
+    <div class="well lightcolor row">
+        {% for item in features.all %}
+            <!-- item 1 -->
+            <div class="features col-lg-3 col-sm-6 col-xs-12">
+                <div class="col-xs-12 big-icon">
+                    <!-- icon -->
+                    <i class="{{ item.icon }}"></i>
+                </div>
+                <div class="col-xs-12">
+                    <h5>{{ item.title }}</h5>
+                    <p>{{ item.body }}</p>
+                </div>
+            </div>
+            <!-- /col-md-3 -->
+        {% endfor %}
+    </div>
+    <!-- /well -->
+</div>

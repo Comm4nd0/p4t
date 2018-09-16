@@ -129,65 +129,67 @@
             <!-- row -->
             <div class="row">
                 <div class="col-md-6 col-lg-7 text-center">
-                    <h3>For your best friend</h3>
+                    <h3>{{ company.sub_heading }}</h3>
                     <p>
-                        We pride our selves in providing everything you and your dogs needs...
-                    </p>
-                    <p>
-                        With a wealth of experience and a professional services...
+                        {{ company.body|linebreaks }}
                     </p>
                     <!-- Accordion -->
                     <div class="panel-group" id="accordion">
-                        <!-- Question 1 -->
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h5 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseOne">Social Responsability</a>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <p>We're always mindful of our neighbours and ensure to pick up any dog waste when
-                                        out for walks!...
-                                    </p>
+                        {% if company.accordion_title1 %}
+                            <!-- Question 1 -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne">{{ company.accordion_title1 }}</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>{{ company.accordion_body1|linebreaks }}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Question 2 -->
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h5 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
-                                       data-parent="#accordion" href="#collapseTwo">Mission Statement</a>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <p>It's our mission to provide comfort and security for your beloved pet...
-                                    </p>
+                        {% endif %}
+                        {% if company.accordion_title2 %}
+                            <!-- Question 2 -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                           data-parent="#accordion"
+                                           href="#collapseTwo">{{ company.accordion_title2 }}</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>{{ company.accordion_body2|linebreaks }}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {#                        <!-- Question 3 -->#}
-                        {#                        <div class="panel">#}
-                        {#                            <div class="panel-heading">#}
-                        {#                                <h5 class="panel-title">#}
-                        {#                                    <a class="accordion-toggle collapsed" data-toggle="collapse"#}
-                        {#                                       data-parent="#accordion" href="#collapseThree">Value Added Services</a>#}
-                        {#                                </h5>#}
-                        {#                            </div>#}
-                        {#                            <div id="collapseThree" class="panel-collapse collapse">#}
-                        {#                                <div class="panel-body">#}
-                        {#                                    <p>Patatemp dolupta orem retibusam qui commolu#}
-                        {#                                        les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a#}
-                        {#                                        ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus#}
-                        {#                                        auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.#}
-                        {#                                    </p>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
+                        {% endif %}
+                        {% if company.accordion_title3 %}
+                            <!-- Question 3 -->
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h5 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                           data-parent="#accordion"
+                                           href="#collapseThree">{{ company.accordion_title3 }}</a>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>{{ company.accordion_body3|linebreaks }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
                     </div>
+
                     <!-- /.accordion -->
                 </div>
                 <!-- /col-md-7-->
@@ -203,58 +205,9 @@
                 </div>
                 <!-- /col-md-5-->
             </div>
-            <!-- /row -->
-            <div class="row margin1 text-center">
-                <!-- item 1 -->
-                <div class="features col-lg-3 col-sm-6 col-xs-12">
-                    <div class="col-xs-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-dog-and-pets-house"></i>
-                    </div>
-                    <div class="col-xs-12">
-                        <h5>Location</h5>
-                        <p>We're based in Marlow and Maidenhead...</p>
-                    </div>
-                </div>
-                <!-- /col-md-3 -->
-                <!-- item 2 -->
-                <div class="features col-lg-3 col-sm-6 col-xs-12">
-                    <div class="col-xs-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-dog-in-front-of-a-man"></i>
-                    </div>
-                    <div class="col-xs-12">
-                        <h5>High Quality</h5>
-                        <p>All staff are trained to the highest standards...</p>
-                    </div>
-                </div>
-                <!-- /col-md-3 -->
-                <!-- item 3 -->
-                <div class="features col-lg-3 col-sm-6 col-xs-12">
-                    <div class="col-xs-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-dog-training-1"></i>
-                    </div>
-                    <div class="col-xs-12">
-                        <h5>Services</h5>
-                        <p>We have a number of services....</p>
-                    </div>
-                </div>
-                <!-- /col-md-3 -->
-                <!-- item 1 -->
-                <div class="features col-lg-3 col-sm-6 col-xs-12">
-                    <div class="col-xs-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-animals-3"></i>
-                    </div>
-                    <div class="col-xs-12">
-                        <h5>Special Care</h5>
-                        <p>We take every measure to ensure the safety of your pet and we're ensured...</p>
-                    </div>
-                </div>
-                <!-- /col-md-3 -->
-            </div>
-            <!-- /row -->
+
+        {% include 'features.html' %}
+
         </div>
         <!-- /container -->
     </section>

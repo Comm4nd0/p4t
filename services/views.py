@@ -1,15 +1,15 @@
 from django.shortcuts import render
-from .models import ServicesPage, Service
+from .models import ServicesDetail, Service
 import gallery.models
 
 # Create your views here.
 
 def services(request):
     services = Service.objects
-    try:
-        overview = Overview.objects.get()
-    except Overview.DoesNotExist:
-        overview = ''
+    # try:
+    overview = ServicesDetail.objects.first()
+    # except ServicesDetail.DoesNotExist:
+    #     overview = ''
     service = Service.objects
     return render(request, 'services.html', {'services': services,
                                              'overview': overview,

@@ -1,20 +1,20 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.core.mail import EmailMessage
 from django.http import HttpResponse
-from services.models import Service, ServicesPage
-from .models import Feature, CompanyPage, TeamMember, TeamPage
+from services.models import Service, ServicesDetail
+from .models import Feature, CompanyDetail, TeamMember, TeamDetail
 import json
 
 # Create your views here.
 def home(request):
     services = Service.objects
     try:
-        overview = ServicesPage.objects.get()
-    except ServicesPage.DoesNotExist:
+        overview = ServicesDetail.objects.first()
+    except ServicesDetail.DoesNotExist:
         overview = ''
     try:
-        company = CompanyPage.objects.get()
-    except CompanyPage.DoesNotExist:
+        company = CompanyDetail.objects.first()
+    except CompanyDetail.DoesNotExist:
         company = ''
 
     features = Feature.objects
@@ -26,8 +26,8 @@ def home(request):
 def company(request):
     services = Service.objects
     try:
-        company = CompanyPage.objects.get()
-    except CompanyPage.DoesNotExist:
+        company = CompanyDetail.objects.first()
+    except CompanyDetail.DoesNotExist:
         company = ''
 
     features = Feature.objects
@@ -39,8 +39,8 @@ def team(request):
     services = Service.objects
     members = TeamMember.objects
     try:
-        teampage = TeamPage.objects.get()
-    except TeamPage.DoesNotExist:
+        teampage = TeamDetail.objects.first()
+    except TeamDetail.DoesNotExist:
         teampage = ''
     return render(request, 'team.html', {'services': services,
                                          'members': members,

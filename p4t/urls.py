@@ -7,7 +7,7 @@ from paws4thought import views
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', views.home, name='home'),
-                  path('The Company/', views.CompanyPage, name='company'),
+                  path('The Company/', views.company, name='company'),
                   path('The Team/', views.team, name='team'),
                   path('services/', include('services.urls')),
                   path('contact_form/', views.contact_form, name='contact_form'),

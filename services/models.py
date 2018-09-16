@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class ServicesPage(models.Model):
+class ServicesDetail(models.Model):
     sub_heading = models.CharField(max_length=100, blank=True)
     header_image_1600x660 = models.ImageField(blank=True)
     image_800x800 = models.ImageField(blank=True)

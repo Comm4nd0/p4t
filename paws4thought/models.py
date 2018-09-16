@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 
-class CompanyPage(models.Model):
+class CompanyDetail(models.Model):
     title = models.CharField(max_length=100, blank=True)
     sub_heading = models.CharField(max_length=100, blank=True)
     header_image_1600x660 = models.ImageField(blank=True)
@@ -23,7 +23,7 @@ class CompanyPage(models.Model):
     home_page_image_800x1000 = models.ImageField(blank=True)
 
 
-class TeamPage(models.Model):
+class TeamDetail(models.Model):
     page_title = models.CharField(max_length=100, blank=True)
     sub_heading = models.CharField(max_length=100, blank=True)
     header_image_1600x660 = models.ImageField(blank=True)

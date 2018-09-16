@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Service, ServicesPage
+from .models import Service, ServicesDetail
 # Register your models here.
 
-admin.site.register(ServicesPage)
+admin.site.register(ServicesDetail)
 admin.site.register(Service)

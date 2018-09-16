@@ -12,7 +12,6 @@
       <change beforePath="$PROJECT_DIR$/p4t/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/p4t/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paws4thought/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paws4thought/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/paws4thought/templates/team.html" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/templates/team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/paws4thought/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/paws4thought/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/models.py" afterDir="false" />
@@ -45,7 +44,7 @@
           <entry key="gitignore" value="9" />
           <entry key="html" value="4096" />
           <entry key="js" value="35" />
-          <entry key="py" value="2706" />
+          <entry key="py" value="2781" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -54,58 +53,49 @@
           <entry key="HTML" value="4096" />
           <entry key="JavaScript" value="35" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="2706" />
+          <entry key="Python" value="2781" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="11" />
           <entry key="gitignore" value="4" />
-          <entry key="html" value="53" />
+          <entry key="html" value="54" />
           <entry key="jpg" value="8" />
           <entry key="js" value="1" />
-          <entry key="py" value="64" />
+          <entry key="py" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="11" />
-          <entry key="HTML" value="53" />
+          <entry key="HTML" value="54" />
           <entry key="Image" value="8" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="64" />
+          <entry key="Python" value="76" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paws4thought/templates/team.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/paws4thought/templates/company.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+            <state relative-caret-position="540">
+              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/p4t/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,6 +118,7 @@
       <find>jumbotron</find>
       <find>overview</find>
       <find>main</find>
+      <find>compan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,15 +147,15 @@
         <option value="$PROJECT_DIR$/paws4thought/templates/features.html" />
         <option value="$PROJECT_DIR$/paws4thought/templates/company.html" />
         <option value="$PROJECT_DIR$/paws4thought/templates/home.html" />
+        <option value="$PROJECT_DIR$/paws4thought/templates/team.html" />
         <option value="$PROJECT_DIR$/paws4thought/models.py" />
         <option value="$PROJECT_DIR$/paws4thought/admin.py" />
-        <option value="$PROJECT_DIR$/p4t/urls.py" />
         <option value="$PROJECT_DIR$/services/models.py" />
         <option value="$PROJECT_DIR$/services/admin.py" />
         <option value="$PROJECT_DIR$/services/views.py" />
         <option value="$PROJECT_DIR$/services/urls.py" />
         <option value="$PROJECT_DIR$/paws4thought/views.py" />
-        <option value="$PROJECT_DIR$/paws4thought/templates/team.html" />
+        <option value="$PROJECT_DIR$/p4t/urls.py" />
       </list>
     </option>
   </component>
@@ -222,17 +213,6 @@
               <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
               <item name="p4t" type="462c0819:PsiDirectoryNode" />
               <item name="paws4thought" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p4t" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p4t" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p4t" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -584,91 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <marker date="1537087476552" expanded="true" signature="148:149" ph="..." />
-            <marker date="1537087476552" expanded="true" signature="917:1197" ph="..." />
-            <marker date="1537087476552" expanded="true" signature="1228:1727" ph="..." />
-            <marker date="1537087476552" expanded="true" signature="7901:7902" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="208" column="33" selection-start-line="208" selection-start-column="33" selection-end-line="208" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/p4t/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <marker date="1537087636610" expanded="true" signature="92:962" ph="..." />
-            <marker date="1537087636610" expanded="true" signature="990:995" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/paws4thought/templates/features.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -683,10 +578,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <marker date="1537090478723" expanded="true" signature="150:151" ph="..." />
+            <marker date="1537090478723" expanded="true" signature="921:1201" ph="..." />
+            <marker date="1537090478723" expanded="true" signature="1232:1731" ph="..." />
+            <marker date="1537090478723" expanded="true" signature="7905:7906" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <marker date="1537091013716" expanded="true" signature="94:964" ph="..." />
+            <marker date="1537091013716" expanded="true" signature="992:997" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="131" column="33" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/paws4thought/templates/team.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paws4thought/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/p4t/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

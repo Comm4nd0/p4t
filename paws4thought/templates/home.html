@@ -17,55 +17,26 @@
         <ul class="slider-pagi"></ul>
         <!--Slider -->
         <div class="slider">
-            <!-- Slide 0 -->
-            <div class="slide slide-0 active" style="background-image:url({% static 'img/slide0.jpg' %})">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <div class="slide__overlay">
-                    </div>
-                    <!-- slide text-->
-                    <div class="slide__text">
-                        <h1 class="slide__text-heading">Paws 4 Thought Dogs</h1>
-                        <div class="hidden-mobile">
-                            <p class="lead">Doggy day care, puppy training and 1-2-1 training in Maidenhead & Marlow</p>
-                            <a href="services.html" class="btn btn-default">our services</a>
+            {% for banner in banners.all %}
+                <!-- Slide -->
+                <div class="slide slide-{{ forloop.counter0 }} active" style="background-image:url({{ banner.image_1600x900.url }})">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <div class="slide__overlay">
+                        </div>
+                        <!-- slide text-->
+                        <div class="slide__text">
+                            <h1 class="slide__text-heading">{{ banner.title }}</h1>
+                            <div class="hidden-mobile">
+                                <p class="lead">{{ banner.text|linebreaks }}</p>
+                                {% if banner.url %}
+                                <a href="{{ banner.url }}" class="btn btn-default">{{ banner.url_text }}</a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Slide 1 -->
-            <div class="slide slide-1" style="background-image:url({% static 'img/slide1.jpg' %})">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <div class="slide__overlay">
-                    </div>
-                    <!-- slide text-->
-                    <div class="slide__text">
-                        <h1 class="slide__text-heading">We Love Pets!</h1>
-                        <div class="hidden-mobile">
-                            <p class="lead">We offer all the best quality products for your best friend.</p>
-                            <a href="blog.html" class="btn btn-default">our Blog</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide slide-2" style="background-image:url({% static 'img/slide2.jpg' %})">
-                <div class="slide__bg"></div>
-                <div class="slide__content">
-                    <div class="slide__overlay">
-                    </div>
-                    <!-- slide text-->
-                    <div class="slide__text">
-                        <h1 class="slide__text-heading">Amazing Services</h1>
-                        <div class="hidden-mobile">
-                            <p class="lead">We offer all the best quality products for your best friend.</p>
-                            <a href="about.html" class="btn btn-default">About Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/Slide2 -->
+            {% endfor %}
         </div>
         <!--/Slider-->
     </div>

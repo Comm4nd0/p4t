@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.mail import EmailMessage
 from django.http import HttpResponse
 from services.models import Service, ServicesDetail
-from .models import Feature, CompanyDetail, TeamMember, TeamDetail
+from .models import Feature, CompanyDetail, TeamMember, TeamDetail, Banner
 from contact.models import ContactDetail
 import json
 
@@ -21,11 +21,14 @@ def home(request):
     features = Feature.objects
 
     contact_details = ContactDetail.objects.first()
+
+    banners = Banner.objects
     return render(request, 'home.html', {'overview': overview,
                                          'services': services,
                                          'company': company,
                                          'features': features,
-                                         'contact_detail': contact_details})
+                                         'contact_detail': contact_details,
+                                         'banners': banners})
 
 def company(request):
     services = Service.objects

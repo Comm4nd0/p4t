@@ -22,6 +22,9 @@ class CompanyDetail(models.Model):
 
     home_page_image_800x1000 = models.ImageField(blank=True)
 
+    def __str__(self):
+        return self.title
+
 
 class TeamDetail(models.Model):
     page_title = models.CharField(max_length=100, blank=True)
@@ -31,6 +34,7 @@ class TeamDetail(models.Model):
 
     def __str__(self):
         return self.page_title
+
 
 class TeamMember(models.Model):
     name = models.CharField(max_length=100, blank=True)
@@ -155,6 +159,16 @@ class Feature(models.Model):
     icon = models.CharField(max_length=50, choices=ICONS, default='None')
     title = models.CharField(max_length=100, blank=True)
     body = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.title
+
+class Banner(models.Model):
+    title = models.CharField(max_length=100, blank=True)
+    text = models.TextField(blank=True)
+    image_1600x900 = models.ImageField(blank=True)
+    url = models.CharField(max_length=100, blank=True)
+    url_text = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         return self.title

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <style>
+        .jumbotron {
+            background: url({{ detail.header_image_1600x660.url }});
+        }
+    </style>
+
+    <!-- Section Gallery -->
+    <section id="gallery" class="pages">
+        <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <!-- Heading -->
+            <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+                <h1>{{ detail.page_title }}</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav-gallery col-md-12">
+                <!-- Gallery Navigation -->
+                <div class="text-center col-md-12">
+                    <ul class="nav nav-pills category text-center" role="tablist" id="gallerytab">
+                        <li class="active"><a href="#" data-toggle="tab" data-filter="*">All</a>
+                        {%  for image in images.all %}
+                        <li><a href="#" data-toggle="tab" data-filter=".{{ image.service.id }}">{{ image.service }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!-- /nav-gallery -->
+            <!-- Gallery Starts-->
+            <div class="row">
+                <div class="col-md-12 margin1">
+                    <div id="lightbox">
+                        {%  for image in images.all %}
+                        <!-- Image -->
+                        <div class="col-sm-6 col-md-6 col-lg-4 {{ image.service.id }}">
+                            <div class="portfolio-item">
+                                <div class="gallery-thumb">
+                                    <img class="img-responsive" src="{{ image.image_800x800.url }}" alt="">
+                                    <span class="overlay-mask"></span>
+                                    <a href="{{ image.image_800x800.url }}" data-gal="prettyPhoto[gallery]" class="link centered"
+                                       title="You can add caption to pictures.">
+                                        <i class="fa fa-expand"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- /lightbox-->
+                </div>
+                <!-- /col-md-12-->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- Section ends -->
+{% endblock %}

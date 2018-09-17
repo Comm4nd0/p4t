@@ -52,11 +52,13 @@
                            {{ testimonial.body|linebreaks }}
                         </blockquote>
                      </div>
+                      {% if testimonial.image_100x100 %}
                      <!-- Profile image -->
                      <div class="review-profile-image">
                         <img src="{{ testimonial.image_100x100.url }}" alt=""/>
                      </div>
                      <!--/review profile image -->
+                      {% endif %}
                   </div>
                   <!-- /col-xs-12 ends -->
                </div>

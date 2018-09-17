@@ -7,7 +7,7 @@ from services.views import Service
 def gallery(request):
     images = Photo.objects
     detail = GalleryDetail.objects.first()
-    services = Service.objects
+    services = Service.objects.all()
     contact_details = ContactDetail.objects.first()
     return render(request, 'gallery.html', {'images': images,
                                             'detail': detail,

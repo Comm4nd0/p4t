@@ -28,7 +28,7 @@
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
     <!-- Color Style CSS -->
-    <link href="{% static 'styles/delicatepet.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/sweetpet.css' %}" rel="stylesheet">
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="72x72" href="{% static '/apple-icon-72x72.png' %}">
     <link rel="apple-touch-icon" sizes="114x114" href="{% static '/apple-icon-114x114.png' %}">
@@ -80,20 +80,21 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% if user.is_authenticated %}{{ user.get_username }}{% else %}Account{% endif %}<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        {% if user.is_authenticated %}
-                            {% if user.is_superuser %}
-                                <li><a href="/admin">Admin</a></li>
-                            {% endif %}
-                            <li><a href="{% url 'logout' %}">Logout</a></li>
-                        {% else %}
-                            <li><a href="{% url 'login' %}">Login</a></li>
-                            <li><a href="{% url 'register' %}">Register</a></li>
-                        {% endif %}
-                    </ul>
-                </li>
+{#                <li class="dropdown">#}
+{#                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">{% if user.is_authenticated %}{{ user.get_username }}{% else %}Account{% endif %}<b class="caret"></b></a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        {% if user.is_authenticated %}#}
+{#                            {% if user.is_superuser %}#}
+{#                                <li><a href="/admin">Admin</a></li>#}
+{#                            {% endif %}#}
+{#                            <li><a href="{% url 'logout' %}">Logout</a></li>#}
+{#                        {% else %}#}
+{#                            <li><a href="{% url 'login' %}">Login</a></li>#}
+{#                            <li><a href="{% url 'register' %}">Register</a></li>#}
+{#                        {% endif %}#}
+{#                    </ul>#}
+{#                </li>#}
+                <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
@@ -131,11 +132,11 @@
             <h5>Follow us</h5>
             <!--Social icons -->
             <div class="social-media">
-                <a href="#" title=""><i class="fa fa-twitter"></i></a>
+{#                <a href="#" title=""><i class="fa fa-twitter"></i></a>#}
                 <a href="https://www.facebook.com/p4tdogs/posts/2007997949264427" title=""><i
                         class="fa fa-facebook"></i></a>
-                <a href="#" title=""><i class="fa fa-google-plus"></i></a>
-                <a href="#" title=""><i class="fa fa-instagram"></i></a>
+{#                <a href="#" title=""><i class="fa fa-google-plus"></i></a>#}
+{#                <a href="#" title=""><i class="fa fa-instagram"></i></a>#}
             </div>
         </div>
         <!-- /.col-md-4 -->
@@ -167,6 +168,8 @@
 <script src="{% static 'js/mc-validate.js' %}"></script>
 <!-- Open street maps-->
 <script src="{% static 'js/map.js' %}"></script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <script>
     $('#contactMessage').click(function () {

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<style>
+    .jumbotron {
+        background: url({{ testimonial_detail.header_image_1600x660.url }});
+    }
+</style>
+
+<!-- Section Testimonials -->
+      <section id="testimonials" class="pages">
+         <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <!-- Heading -->
+            <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+               <h1>Testimonials</h1>
+            </div>
+         </div>
+         <!-- container-->
+         <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                  <img src="{{ testimonial_detail.image_690x500.url }}" alt="" class="center-block img-responsive img-rounded">
+               </div>
+               <!-- /col-md-4 -->
+               <div class="col-md-7 res-margin">
+                  <h3>{{ testimonial_detail.sub_title }}</h3>
+                  <p>{{ testimonial_detail.body|linebreaks }}
+                  </p>
+                  <!-- alert -->
+                  <div class="alert alert-success">
+                     <p>{{ testimonial_detail.body2|linebreaks }}
+                     </p>
+                  </div>
+                  <!-- /alert -->
+               </div>
+               <!-- /col-md-8 -->
+            </div>
+            <!-- row -->
+            <!-- Reviews -->
+            <div id="owl-reviews" class="owl-carousel margin1">
+                {% for testimonial in testimonials %}
+               <!-- review -->
+               <div class="review">
+                  <div class="col-xs-12">
+                     <!-- caption -->
+                     <div class="review-caption">
+                        <h5>{{ testimonial.name }}</h5>
+                        <div class="small-heading">
+                           {{ testimonial.service }}
+                        </div>
+                        <blockquote>
+                           {{ testimonial.body|linebreaks }}
+                        </blockquote>
+                     </div>
+                     <!-- Profile image -->
+                     <div class="review-profile-image">
+                        <img src="{{ testimonial.image_100x100.url }}" alt=""/>
+                     </div>
+                     <!--/review profile image -->
+                  </div>
+                  <!-- /col-xs-12 ends -->
+               </div>
+               <!-- /review-->
+            {% endfor %}
+            </div>
+            <!-- /owl-carousel -->
+         </div>
+         <!-- /container-->
+      </section>
+      <!-- /Section ends -->
+
+{% endblock %}

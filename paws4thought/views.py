@@ -59,14 +59,14 @@ def team(request):
 
 def contact_form(request):
     if request.POST:
-
         email = EmailMessage(
             request.POST.get('subject'),
             "{}, {}".format(request.POST.get('message'), request.POST.get('message')),
             'contact@cmdlb.com',
-            ['claire@paws4thoughtdogs.com'],
+            ['marcobaldanza@hotmail.co.uk'],
             reply_to=[request.POST['email']],
         )
+
         try:
             email.send(fail_silently=False)
             message = {'message': "Thank you for your email, we'll be in touch soon!"}

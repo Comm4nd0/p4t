@@ -19,7 +19,8 @@
         <div class="slider">
             {% for banner in banners.all %}
                 <!-- Slide -->
-                <div class="slide slide-{{ forloop.counter0 }} active" style="background-image:url({{ banner.image_1600x900.url }})">
+                <div class="slide slide-{{ forloop.counter0 }} active"
+                     style="background-image:url({{ banner.image_1600x900.url }})">
                     <div class="slide__bg"></div>
                     <div class="slide__content">
                         <div class="slide__overlay">
@@ -30,7 +31,7 @@
                             <div class="hidden-mobile">
                                 <p class="lead">{{ banner.text|linebreaks }}</p>
                                 {% if banner.url %}
-                                <a href="{{ banner.url }}" class="btn btn-default">{{ banner.url_text }}</a>
+                                    <a href="{{ banner.url }}" class="btn btn-default">{{ banner.url_text }}</a>
                                 {% endif %}
                             </div>
                         </div>
@@ -46,59 +47,7 @@
          preserveAspectRatio="none" fill="#fff">
         <path d="M0 100 C 20 0 50 0 100 100 Z"/>
     </svg>
-    <!-- Section Services-index -->
-    <section id="services-index">
-        <!-- container -->
-        <div class="container">
-            <div class="section-heading">
-                <h2>Our Services</h2>
-            </div>
-            <!-- /section-heading-->
-            <div class="col-md-10 col-md-offset-1 text-center">
-                {% block messages %}
-                    <p>{% if overview %}{{ overview.body }}{% endif %}</p>
-                    </div>
-                {% endblock %}
-            <!-- /col-md-10-->
-        </div>
-        <!-- /container-->
-        <div class="container-fluid bg-pattern margin1" data-bottom-top="background-position: 0px 70%,99% 70%;"
-             data-top-bottom="background-position: 0px -50%,99% -50%;">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <!-- Services -->
-                    <div id="owl-services" class="owl-carousel">
-                        {% for service in services.all %}
-                            <!-- Feature Box 1  -->
-                            <div class="col-xs-12">
-                                <div class="box_icon">
-                                    <div class="icon">
-                                        <!-- icon -->
-                                        <div class="image">
-                                            <img src="{{ service.main_image_500x400.url }}" class="img-responsive"
-                                                 alt="">
-                                        </div>
-                                        <div class="info">
-                                            <h4>{{ service.title }}</h4>
-                                            <p>{{ service.body|linebreaks|truncatewords:100 }}</p>
-                                            <!-- Button-->
-                                            <a class="btn" href="services/{{ service.title }}">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /box_icon -->
-                            </div>
-                            <!-- /col-xs-12 ends -->
-                        {% endfor %}
-                    </div>
-                    <!-- /owl-services -->
-                </div>
-                <!-- /col-md-9 -->
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container-fluid-->
-    </section>
+
     <!-- Section About-index -->
     <section id="about-index" class="bg-lightcolor1">
         <div class="container">
@@ -191,7 +140,59 @@
         <!-- /container -->
     </section>
     <!-- /section ends -->
-
+    <!-- Section Services-index -->
+    <section id="services-index">
+        <!-- container -->
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Services</h2>
+            </div>
+            <!-- /section-heading-->
+            <div class="col-md-10 col-md-offset-1 text-center">
+                {% block messages %}
+                    <p>{% if overview %}{{ overview.body }}{% endif %}</p>
+                    </div>
+                {% endblock %}
+            <!-- /col-md-10-->
+        </div>
+        <!-- /container-->
+        <div class="container-fluid bg-pattern margin1" data-bottom-top="background-position: 0px 70%,99% 70%;"
+             data-top-bottom="background-position: 0px -50%,99% -50%;">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Services -->
+                    <div id="owl-services" class="owl-carousel">
+                        {% for service in services.all %}
+                            <!-- Feature Box 1  -->
+                            <div class="col-xs-12">
+                                <div class="box_icon">
+                                    <div class="icon">
+                                        <!-- icon -->
+                                        <div class="image">
+                                            <img src="{{ service.main_image_500x400.url }}" class="img-responsive"
+                                                 alt="">
+                                        </div>
+                                        <div class="info">
+                                            <h4>{{ service.title }}</h4>
+                                            <p>{{ service.body|linebreaks|truncatewords:100 }}</p>
+                                            <!-- Button-->
+                                            <a class="btn" href="services/{{ service.title }}">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /box_icon -->
+                            </div>
+                            <!-- /col-xs-12 ends -->
+                        {% endfor %}
+                    </div>
+                    <!-- /owl-services -->
+                </div>
+                <!-- /col-md-9 -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container-fluid-->
+    </section>
     <!-- Section Contact  -->
     <section id="contact-index">
         <div class="container">
@@ -226,6 +227,7 @@
                         <label>Message<span class="required">*</span></label>
                         <textarea name="message" id="message" class="textarea-field form-control" rows="3"
                                   required=""></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LdMvnAUAAAAAEGXsuaLqw8a-bRYif1x2kgqj4l-"></div>
                     </div>
                     <button type="submit" id="contactMessage" value="Submit" class="btn center-block">Send message
                     </button>
